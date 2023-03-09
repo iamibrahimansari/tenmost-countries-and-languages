@@ -1,0 +1,25 @@
+$country-language-color: #666666;
+$bar-bg-color: #ffa500;
+$percentage: #484848;
+.main{
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        span{
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+        }
+        &:nth-child(2) > span{
+            border-radius: 5px;
+            background-color: $bar-bg-color;
+        }
+        &:last-child{
+            justify-self: right;
+        }
+    }
+}

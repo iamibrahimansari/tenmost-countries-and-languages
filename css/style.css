@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif; }
+
+body {
+  background-color: #f0f0f0;
+  overflow-x: none; }
+
+.main {
+  width: 60%;
+  margin-inline: auto; }
+
+.header__first,
+.header__second,
+.main {
+  padding: 2rem; }
+
+.header__first,
+.header__second {
+  text-align: center; }
+
+.header__first__h1 {
+  color: #fea809;
+  font-size: 3.5rem; }
+
+.header__first__p {
+  color: #818181;
+  font-size: 1.6rem; }
+
+.header__second {
+  text-align: center;
+  background-color: #fff; }
+  .header__second__btns .btn {
+    background-color: #ffa500;
+    color: #7e5d21;
+    padding: 0.8rem 2rem;
+    border: none;
+    cursor: pointer; }
+    .header__second__btns .btn:first-child {
+      margin-right: 1rem; }
+  .header__second__p {
+    color: #444444;
+    font-size: 1.4rem;
+    margin-top: 1rem; }
+
+.main {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 15% auto 15%; }
+  .main div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    .main div span {
+      height: 2.5rem;
+      display: flex;
+      align-items: center; }
+    .main div:nth-child(2) > span {
+      border-radius: 5px;
+      background-color: #ffa500; }
+    .main div:last-child {
+      justify-self: right; }
+
+@media screen and (max-width: 1090px) {
+  .main {
+    width: 70%; } }
+
+@media screen and (max-width: 960px) {
+  .main {
+    width: 80%; } }
+
+@media screen and (max-width: 830px) {
+  .main {
+    width: 90%; } }
+
+@media screen and (max-width: 740px) {
+  .main {
+    width: 98%; } }
+
+@media screen and (max-width: 670px) {
+  .main {
+    grid-template-columns: 17% auto 17%; }
+  .header__first__h1 {
+    font-size: 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .main {
+    grid-template-columns: 20% auto 20%; }
+  .header__first__h1 {
+    font-size: 2.5rem; } }
+
+@media screen and (max-width: 510px) {
+  .main {
+    grid-template-columns: 23% auto 23%; } }
+
+@media screen and (max-width: 440px) {
+  .main {
+    grid-template-columns: 27% auto 27%; } }
+
+@media screen and (max-width: 380px) {
+  .main {
+    grid-template-columns: 32% auto 32%; } }
+
+@media screen and (max-width: 330px) {
+  .main {
+    grid-template-columns: 35% auto 35%; } }

@@ -1,0 +1,33 @@
+$background-primary: #f0f0f0;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: $background-primary;
+    overflow-x: none;
+}
+ 
+.main{
+    width: 60%;
+    margin-inline: auto;
+}
+
+.header__first, 
+.header__second,
+.main{
+    padding: 2rem;
+}
+
+.header__first, 
+.header__second{
+    text-align: center;
+}

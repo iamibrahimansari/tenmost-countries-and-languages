@@ -1,0 +1,42 @@
+$heading-primary: #fea809;
+$paragraph-primary: #818181;
+$btn-primary: #ffa500;
+$btn-text-color: #7e5d21;
+$paragraph-secondary: #444444;
+$white-color: #fff;
+
+.header{
+    &__first{        
+        &__h1{
+            color: $heading-primary;
+            font-size: 3.5rem;
+        }
+        &__p{
+            color: $paragraph-primary;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__second{
+        text-align: center;
+        background-color: $white-color;
+        &__btns{
+            .btn{
+                background-color: $btn-primary;
+                color: $btn-text-color;
+                padding: 0.8rem 2rem;
+                border: none;
+                cursor: pointer;
+                &:first-child{
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        &__p{
+            color: $paragraph-secondary;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+    }
+}
